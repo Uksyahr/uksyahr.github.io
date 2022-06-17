@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Ukasyah | Portfolio Web</title>
+  <link rel="icon" href="images/wetermark.png">
+
+  <!-- Fontawesome CDN Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <header class="navbar" id="navbar">
+    <div class="logo"><a href="#" class="logo">Ukasyah</a></div>
+    <ul class="menu">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+    </ul>
+  </header>
+
+  <!-- Home Section Start -->
+  <section class="home" id="home">
+    <div class="home-content">
+      <div class="text">
+        <div class="text-one">Hello,</div>
+        <div class="text-two">I'm Ukasyah Rosyid</div>
+        <div class="text-three">Secondary School Student</div>
+        <div class="text-four">From <span>Indonesia</span></div>
+      </div>
+    </div>
+  </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+      <div class="content">
+        <div class="title"><span>About Me</span></div>
+      <div class="about-details">
+        <div class="left">
+          <img src="images/ukasyah.png" alt="">
+        </div>
+        <div class="right">
+          <div class="topic">Ukasyah Rosyid</div>
+          <p class="text">Born in the city of Bandar Lampung, Indonesia. I started my first education in 2015 at TK Kembang Ibu. Later going to Integrated Islamic Elementary School of Permata Bunda III since 2015 - 2021. I'm currently a student at Integrated Islamic Secondary School of Auladina Indonesia. I've got 3 achievements in total, 1st is for LCT, 2nd is for Futsal, and 3rd is for Tarik Tambang. The organizations that I'm currently in are OSIS and Pramuka.</p>
+          <div class="button">
+            <button><a href="mailto:foxeezyh@gmail.com">Contact Me</a></button>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+    <div class="content">
+       <div class="title"><span style="color: #fff;">My Skills</span></div>
+       <div class="skills-details">
+         <div class="text">
+           <p>I studied my first Web Education at Auladina Indonesia. My first website is this website that you're looking right now. The subject that I'm learning deeply right now is JavaScript. And I can cook stuff like noodles, fried rice, catfish, pancakes, a round chocolate thing made out of regal, and many more!</p>
+         </div>
+         <div class="boxes">
+           <div class="box">
+             <div class="topic">HTML</div>
+             <div class="per">90%</div>
+           </div>
+           <div class="box">
+             <div class="topic">CSS</div>
+             <div class="per">60%</div>
+           </div>
+           <div class="box">
+             <div class="topic">JavScript</div>
+             <div class="per">50%</div>
+           </div>
+           <div class="box">
+             <div class="topic">Cooking</div>
+             <div class="per">100%</div>
+           </div>
+         </div>
+       </div>
+     </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+      <div class="content">
+        <div class="title"><span style="color: #25242a;">Gallery</span></div>
+        <div class="row-1">
+          <img src="images/image1.jpg" alt="" class="image">
+          <img src="images/image2.jpg" alt="" class="image">
+          <img src="images/image3.jpg" alt="" class="image">
+          <img src="images/image4.jpg" alt="" class="image">
+        </div>
+      </div>
+    </section>
+
+  <footer>
+    &copy; All Right Reserved by Ukasyah
+  </footer>
+
+    
+    <script type="text/javascript">
+      window.addEventListener("scroll", function(){
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0);
+      })
+
+      var modal = document.getElementById("myModal");
+
+      var img = document.getElementById("myImg");
+      var modalImg = document.getElementById("img01");
+      var captionText = document.getElementById("caption");
+      img.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+      }
+
+      var span = document.getElementsByClassName("close")[0];
+
+      span.onclick = function() { 
+        modal.style.display = "none";
+      }
+    </script>
+</body>
+</html>

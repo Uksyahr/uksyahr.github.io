@@ -1,0 +1,555 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@500&family=Roboto:wght@500&display=swap');
+
+
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 40px 100px;
+    z-index: 100000;
+}
+header.sticky{
+    padding: 20px 100px;
+    background: #24252ab6;
+}
+header .logo{
+    position: relative;
+    color: #fff;
+    text-align: none;
+    font-size: 22px;
+    font-family: "Montserrat";
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.6s;
+}
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li{
+    position: relative;
+    list-style: none;
+}
+header ul li a{
+    position: relative;
+    margin: 0 25px;
+    text-decoration: none;
+    color: #fff;
+    font-family: "Montserrat";
+    transition: 0.4s;
+}
+header ul li a:hover{
+    color:#32769e;
+}
+header.sticky .logo,
+header.sticky ul li a{
+    color: #fff;
+}
+header.sticky ul li a:hover{
+    color: #0088a9;
+}
+
+
+/* Home Section */
+.home{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url('Images/mountain1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .home .home-content{
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .home .text-one{
+    font-size: 25px;
+    color: #fff;
+    text-align: center;
+  }
+  .home .text-two{
+    color: #fff;
+    font-size: 35px;
+    margin-left: -3px;
+    font-weight: 1;
+    text-align: center;
+  }
+  .home .text-three{
+      font-size: 15px;
+      color: #edf0f1;
+      text-align: center;
+  }
+  .home .text-four{
+      font-size: 15px;
+      color: #edf0f1;
+      text-align: center;
+  }
+  .home .text-four span{
+      color: #f75151;
+  }
+/* About Section */
+section{
+  padding-top: 40px;
+}
+section .content{
+  width: 80%;
+  margin: 40px auto;
+  font-family: 'Poppins', sans-serif;
+}
+.about .about-details{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+section .title{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+section .title span{
+  color: #0E2431;
+  font-size: 30px;
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 8px;
+}
+section .title span::before,
+section .title span::after{
+  content: '';
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: #4070f4;
+  left: 0;
+  bottom: 0;
+}
+section .title span::after{
+  bottom: -7px;
+  width: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.about .about-details .left{
+  width: 45%;
+}
+.about .left img{
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.about-details .right{
+  width: 55%;
+}
+section  .topic{
+  color: #0E2431;
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.about-details .right p{
+  text-align: justify;
+  color: #0E2431;
+}
+
+ /* My Skills CSS */
+
+ .skills{
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(images/mountain7.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+ }
+ .skills .content{
+   padding: 70px 0;
+   font-family: "Montserrat";
+ }
+ .skills .skills-details{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+ }
+ .skills-details .text{
+   width: 50%;
+ }
+ .skills-details p{
+   color: #0E2431;
+   text-align: justify;
+ }
+.skills-details .boxes{
+  width: 45%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.skills-details .box{
+  width: calc(100% / 2 - 20px);
+  margin: 20px 0;
+}
+.skills-details .boxes .topic{
+  font-size: 20px;
+  color: #edf0f1;
+}
+.skills-details .boxes .per{
+  font-size: 60px;
+  color: #edf0f1;
+}
+.text p{
+    color: #fff;
+    margin: 0 40px;
+}
+
+/* Gallery Section */
+.gallery{
+  padding: 40px;
+  margin: 40px;
+}
+.gallery .row-1 img{
+  width: 40%;
+  height: auto;
+  margin-left: 60px;
+  margin-top: 20px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  right: 35px;
+  bottom: 25px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+
+/* Title */
+section .title{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+  section .title span{
+    color: #0E2431;
+    font-size: 30px;
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 8px;
+    font-family: "Montserrat";
+  }
+  section .title span::before,
+  section .title span::after{
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: #858585;
+    left: 0;
+    bottom: 0;
+  }
+  section .title span::after{
+    bottom: -7px;
+    width: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  section .button{
+  margin: 16px 0;
+}
+section .button button{
+  outline: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 25px;
+  font-weight: 400;
+  background: #797979;
+  color: #fff;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+section .button a{
+  text-decoration: none;
+  color: #fff;
+}
+section .button button:hover{
+  border-color: #797979;
+  background-color: #fff;
+  color: #797979;
+}
+section .button a:hover{
+  color: #797979;
+}
+
+/* Contact Me CSS */
+.contact{
+  background: #F0F8FF;
+}
+.contact .content{
+  margin: 0 auto;
+  padding: 30px 0;
+}
+.contact .text{
+  width: 80%;
+  text-align: center;
+  margin: auto;
+}
+
+footer{
+  margin-top: 2em;
+  padding: 1em;
+  text-align: center;
+  background-color: #797979;
+  font-family: "Montserrat";
+  color: #fff;
+}
+
+  /* Responsive Media Query */
+@media (max-width: 1190px) {
+  section .content{
+    width: 85%;
+  }
+}
+@media (max-width: 1000px) {
+  .about .about-details{
+    justify-content: center;
+    flex-direction: column;
+  }
+  .about .about-details .left{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .about-details .right{
+    width: 90%;
+    margin: 40px 0;
+  }
+  .services .boxes .box{
+    margin: 20px 0;
+    width: calc(100% / 2 - 20px);
+  }
+}
+@media (max-width: 900px) {
+  .about .left img{
+    height: 350px;
+    width: 350px;
+  }
+}
+
+@media (max-width: 750px) {
+  header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 20px 100px;
+    z-index: 2;
+  }
+  header.sticky{
+      padding: 20px 100px;
+      background: #24252ab6;
+  }
+  header .logo{
+      position: relative;
+      color: #fff;
+      text-align: none;
+      font-size: 10px;
+      font-family: "Montserrat";
+      text-transform: uppercase;
+      text-decoration: none;
+      letter-spacing: 2px;
+      transition: 0.6s;
+      margin-left: -30px;
+      margin-right: 12px;
+  }
+  header ul{
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  header ul li{
+      position: relative;
+      list-style: none;
+  }
+  header ul li a{
+      position: relative;
+      margin: 0 20px 0 20px;
+      text-decoration: none;
+      color: #fff;
+      font-family: "Montserrat";
+      transition: 0.4s;
+      font-size: 8px;
+  }
+  header ul li a:hover{
+      color:#32769e;
+  }
+  .home .text-two{
+    font-size: 65px;
+  }
+  .home .text-three{
+    font-size: 35px;
+  }
+  .skills .skills-details{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .skills-details .text{
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .skills-details .boxes{
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+  }
+  .services .boxes .box{
+    margin: 20px 0;
+    width: 80%;
+  }
+  .contact .text{
+    width: 100%;
+}
+}
+
+@media (max-width: 500px){
+  .home .text-two{
+    font-size: 25px;
+  }
+  .home .text-three{
+    font-size: 13px;
+  }
+  .home .text-four{
+    font-size: 12px;
+  }
+  .skills-details .boxes .per{
+    font-size: 46px;
+    color: #edf0f1;
+  }
+  .skills-details .text{
+    font-size: 14px;
+  }
+  header ul li a{
+    position: relative;
+    margin: 0 20px 0 23px;
+    text-decoration: none;
+    color: #fff;
+    font-family: "Montserrat";
+    transition: 0.4s;
+    font-size: 8px;
+}
+.gallery .row-1 img{
+  width: 100%;
+  height: auto;
+  margin-left: 0px;
+  margin-top: 20px;
+}
+}
+
+@media (max-width: 400px){
+  header ul li a{
+    margin-left: 17px;
+  }
+  .gallery .row-1 img{
+    width: 100%;
+    height: auto;
+    margin-left: 0px;
+    margin-top: 20px;
+  }
+  
+}
